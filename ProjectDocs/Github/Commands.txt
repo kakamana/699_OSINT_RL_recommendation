@@ -1,0 +1,9 @@
+Check what changes are pending:
+git status
+
+Add the modified files e.g.:
+git add app/services/data_processor.py
+git add tests/test_processor.py
+
+Commit the changes:
+git commit -m "refactor: update data processor to read directly from pickle file
