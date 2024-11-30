@@ -7,3 +7,26 @@ git add tests/test_processor.py
 
 Commit the changes:
 git commit -m "refactor: update data processor to read directly from pickle file
+
+To add all changes:
+git add .
+
+Or to add specific files:
+git add filename1 filename2
+
+To commit with a message:
+git commit -m "your message here"
+
+For better commit messages, use a structured format:
+git commit -m "refactor: update data processor to use pickle files
+
+- Modified data processor to read from pickle instead of CSV
+- Added better error handling
+- Updated tests to handle pickle files
+- Added logging for better debugging"
+
+Finally, push your changes:
+git push origin main
+
+Or if you want to do it all in one line:
+git add . && git commit -m "your message" && git push origin main

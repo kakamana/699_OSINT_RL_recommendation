@@ -26,8 +26,9 @@ class DataProcessor:
         """
         try:
             logger.info("Loading telegram data...")
-            # Read the CSV file
-            self.telegram_df = pd.read_csv(self.raw_dir / "final_telegram_data.csv")
+            # Read the pickle file
+            with open(self.raw_dir / "final_telegram_df", 'rb') as file:
+                self.telegram_df = pickle.load(file)
             
             logger.info(f"DataFrame columns: {self.telegram_df.columns}")
             logger.info(f"DataFrame shape: {self.telegram_df.shape}")
